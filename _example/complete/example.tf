@@ -51,5 +51,5 @@ module "firewall" {
   environment   = local.environment
   allowed_ip    = ["0.0.0.0/0"]
   allowed_ports = [80, 443]
-  droplet_ids   = module.droplet[*].id
+  droplet_ids   = module.droplet.id
 }
