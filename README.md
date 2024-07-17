@@ -17,7 +17,7 @@ This Terraform module creates structured firewall for digitalocean resources wit
 Example:Basic
 ```hcl
 module "firewall" {
-  source        = "git::https://github.com/opsstation/terraform-digitalocean-firewall.git?ref=v1.0.0"
+  source        = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git?ref=v1.0.0"
   name          = local.name
   environment   = local.environment
   allowed_ip    = ["0.0.0.0/0"]
@@ -29,7 +29,7 @@ Example:Complete
 
 ```hcl
 module "firewall" {
-  source        = "git::https://github.com/opsstation/terraform-digitalocean-firewall.git?ref=v1.0.0"
+  source        = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git?ref=v1.0.0"
   name          = local.name
   environment   = local.environment
   allowed_ip    = ["0.0.0.0/0"]
@@ -41,7 +41,7 @@ module "firewall" {
 Example:firewall-firewalls
 ```hcl
 module "firewall_firewall" {
-  source              = "git::https://github.com/opsstation/terraform-digitalocean-firewall.git?ref=v1.0.0"
+  source              = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git?ref=v1.0.0"
   name                = local.name
   environment         = local.environment
   firewall_cluster_id = "db-mysql-nyc1-64954-do-user-14624882-0.b.db.ondigitalocean.com"
@@ -68,18 +68,18 @@ Please ensure you specify the correct 'source' path for the module.
 - This module currently does not provide any outputs.
 
 # Examples:Basic
-For detailed examples on how to use this module, please refer to the '[example](https://github.com/opsstation/terraform-digitalocean-firewall/tree/master/_example/basic)' directory within this repository.
+For detailed examples on how to use this module, please refer to the '[example](https://github.com/yadavprakash/terraform-digitalocean-firewall/tree/master/_example/basic)' directory within this repository.
 # Examples:complete
-For detailed examples on how to use this module, please refer to the '[example](https://github.com/opsstation/terraform-digitalocean-firewall/tree/master/_example/complete)' directory within this repository.
+For detailed examples on how to use this module, please refer to the '[example](https://github.com/yadavprakash/terraform-digitalocean-firewall/tree/master/_example/complete)' directory within this repository.
 # Examples:mongodb
-For detailed examples on how to use this module, please refer to the '[example](https://github.com/opsstation/terraform-digitalocean-firewall/tree/master/_example/firewall-databases)' directory within this repository.
+For detailed examples on how to use this module, please refer to the '[example](https://github.com/yadavprakash/terraform-digitalocean-firewall/tree/master/_example/firewall-databases)' directory within this repository.
 
 ## Authors
 Your Name
 Replace '[License Name]' and '[Your Name]' with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/opsstation/terraform-digitalocean-firewall/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/yadavprakash/terraform-digitalocean-firewall/blob/master/LICENSE) file for details.
 
 
 
@@ -101,7 +101,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/opsstation/terraform-digitalocean-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/yadavprakash/terraform-digitalocean-labels.git | v1.0.0 |
 
 ## Resources
 

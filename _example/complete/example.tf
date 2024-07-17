@@ -9,7 +9,7 @@ locals {
 }
 
 module "vpc" {
-  source      = "git::https://github.com/opsstation/terraform-digitalocean-vpc.git?ref=v1.0.0"
+  source      = "git::https://github.com/yadavprakash/terraform-digitalocean-vpc.git?ref=v1.0.0"
   name        = "test-network"
   environment = "test"
   label_order = ["name", "environment"]
@@ -19,7 +19,7 @@ module "vpc" {
 }
 
 module "droplet" {
-  source             = "git::https://github.com/opsstation/terraform-digitalocean-droplet.git?ref=v1.0.0"
+  source             = "git::https://github.com/yadavprakash/terraform-digitalocean-droplet.git?ref=v1.0.0"
   name               = local.name
   environment        = local.environment
   region             = local.region
@@ -53,3 +53,5 @@ module "firewall" {
   allowed_ports = [80, 443]
   droplet_ids   = module.droplet.id
 }
+
+

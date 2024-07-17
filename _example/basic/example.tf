@@ -16,3 +16,4 @@ module "firewall" {
   allowed_ports = [22, 80]
 
 }
+
