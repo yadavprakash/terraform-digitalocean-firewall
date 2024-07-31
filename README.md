@@ -17,7 +17,7 @@ This Terraform module creates structured firewall for digitalocean resources wit
 Example:Basic
 ```hcl
 module "firewall" {
-  source        = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git?ref=v1.0.0"
+  source        = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git"
   name          = local.name
   environment   = local.environment
   allowed_ip    = ["0.0.0.0/0"]
@@ -29,7 +29,7 @@ Example:Complete
 
 ```hcl
 module "firewall" {
-  source        = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git?ref=v1.0.0"
+  source        = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git"
   name          = local.name
   environment   = local.environment
   allowed_ip    = ["0.0.0.0/0"]
@@ -41,7 +41,7 @@ module "firewall" {
 Example:firewall-firewalls
 ```hcl
 module "firewall_firewall" {
-  source              = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git?ref=v1.0.0"
+  source              = "git::https://github.com/yadavprakash/terraform-digitalocean-firewall.git"
   name                = local.name
   environment         = local.environment
   firewall_cluster_id = "db-mysql-nyc1-64954-do-user-14624882-0.b.db.ondigitalocean.com"
